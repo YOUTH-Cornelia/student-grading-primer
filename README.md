@@ -240,4 +240,6 @@ In your week 3 lab, you must do the following:
 3. Explain the edge case you addressed and your implementation which you should've documented in `EDGE_CASE.md`
 
 #### Git
+
 4. Show your pull request on github from your private repo to your tutor
+
