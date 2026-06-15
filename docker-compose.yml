@@ -3,6 +3,7 @@ services:
     volumes:
       - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
       - postgres_data:/var/lib/postgresql/data
+
     image: postgres:15
     environment:
       POSTGRES_USER: marksuser
@@ -34,6 +35,7 @@ services:
     depends_on: 
       - backend
 
+
   automark:
     build: ./automark
     depends_on:
@@ -42,6 +44,6 @@ services:
     profiles:
       - debug
 
-
 volumes:
   postgres_data:
+
